@@ -11,7 +11,7 @@ because everyone needs 'em
   cd dotfiles
   ```
 
-- [] Log into Mac App Store
+- [ ] Log into Mac App Store
 
 - [ ] Run Boostrap Script
 
