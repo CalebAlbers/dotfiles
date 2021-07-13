@@ -1,4 +1,5 @@
 # dotfiles
+
 because everyone needs 'em
 
 - [ ] Clone this repository
@@ -17,3 +18,4 @@ because everyone needs 'em
   ```bash
   ./bootstrap.sh
   ```
+  
