@@ -1,54 +1,26 @@
 # install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! command -v brew &> /dev/null
+then
+  echo "Installing brew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-# configure brew policies for auto-update
+brew bundle install
 
-# install xcode
+# update all mac apps
+brew cu
 
-# install yadm
-brew install yadm
-
-# install & configure zsh
-brew zsh
-brew zsh-syntax-highlighting
-
-# install VS Code
-brew cask install visual-studio-code
-
-# install NodeJS dev tools
-brew node
 npm install -g n # node version manager
-brew install yarn
-
-# install Pliancy CLI
-npm install -g pliancy-cli
-
-# install gcloud + kubectl
-brew cask install google-cloud-sdk
-
-brew install awscli
-
-# install Chrome
-brew cask install google-chrome
-brew cask install slack
-brew cask install spotify
-
-# install Zoom
-
-#install Github Desktop
-brew cask install github
-brew install gh # Github CLI
-
-# misc.
-brew install jq
-brew install kubedecode
-brew cask install authy
-brew cask install typora
-brew cask install postman
-
+npm install -g yo
+npm install -g sao
+npm install -g nodemon
+npm install -g typescript
+npm install -g npm-merge-driver
 
 # hide icons from desktop
-defaults write com.apple.finder CreateDesktop -bool false
-killall Finder
+source ./scripts/defaults.sh
+
+
+
 
 # set default app to vs code for most extensions???
