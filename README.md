@@ -5,10 +5,8 @@ because everyone needs 'em
 - [ ] Clone this repository
 
   ```bash
-  mkdir -p src
-  cd src
-  git clone https://github.com/calebalbers/dotfiles.git
-  cd dotfiles
+    git clone --recursive https://github.com/calebalbers/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles
   ```
 
 - [ ] Log into Mac App Store
@@ -16,6 +14,6 @@ because everyone needs 'em
 - [ ] Run Boostrap Script
 
   ```bash
-  ./bootstrap.sh
+  ~/.dotfiles/bootstrap.sh
   ```
   
