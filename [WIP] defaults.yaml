@@ -1,0 +1,25 @@
+# Ported from https://mths.be/macos
+
+com.apple.finder:
+  # hide icons from desktop
+  CreateDesktop: false
+
+NSGlobalDomain:
+  # Expand save panel by default
+  NSNavPanelExpandedStateForSaveMode: true
+  NSNavPanelExpandedStateForSaveMode2: true
+
+  # Expand print panel by default
+  PMPrintingExpandedStateForPrint: true
+  PMPrintingExpandedStateForPrint2: true
+
+  # Disable automatic capitalization as it’s annoying when typing code
+  NSAutomaticCapitalizationEnabled: false
+
+  # Disable automatic period substitution as it’s annoying when typing code
+  NSAutomaticPeriodSubstitutionEnabled: false
+
+com.apple.print.PrintingPrefs:
+  # Automatically quit printer app once the print jobs complete
+  Quit When Finished: true
+

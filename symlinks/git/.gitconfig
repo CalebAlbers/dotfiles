@@ -1,0 +1,17 @@
+[core]
+	excludesfile = ~/.gitignore
+[user]
+	name = Caleb Albers
+	email = calebalbers@gmail.com
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[merge "npm-merge-driver"]
+	name = automatically merge npm lockfiles
+	driver = npx npm-merge-driver merge %A %O %B %P
