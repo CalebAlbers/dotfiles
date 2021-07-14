@@ -2,18 +2,12 @@
 
 because everyone needs 'em
 
-- [ ] Clone this repository
-
-  ```bash
-    git clone --recursive https://github.com/calebalbers/dotfiles.git ~/.dotfiles
-    cd ~/.dotfiles
-  ```
+## One-liner Install
 
 - [ ] Log into Mac App Store
 
-- [ ] Run Boostrap Script
+- [ ] Run bootstrap script
 
   ```bash
-  ~/.dotfiles/bootstrap.sh
+    curl -fs https://pil.eus | bash
   ```
-  
