@@ -12,23 +12,16 @@ then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Install Git
-if ! command -v git &> /dev/null
-then
-  echo "Installing Git..."
-  brew install git
-fi
-
 # Install Zero
 brew install zero-sh/tap/zero
 
 # Clone Repo
 git clone --recursive https://github.com/calebalbers/dotfiles.git ~/.dotfiles
 
-# Switch Directory
-cd ~/.dotfiles
-
 # Initialize Setup
-zero setup
+zero apply-symlinks
+zero apply-defaults
+zero bundle
+zero run-scripts
 
 # TODO: configure homebrew to auto-update
