@@ -37,6 +37,7 @@ brew "zero-sh/tap/zero"
 brew "mveritym/mel/kubedecode"
 brew "volta"
 brew "awscli"
+brew "pure"
 
 
 ####################
@@ -73,6 +74,7 @@ cask "slack"
 cask "spotify"
 cask "typora"
 cask "powershell"
+cask "visual-studio-code"
 cask "zoom"
 
 
