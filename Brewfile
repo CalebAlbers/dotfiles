@@ -38,6 +38,7 @@ brew "mveritym/mel/kubedecode"
 brew "volta"
 brew "awscli"
 brew "pure"
+brew "shellcheck"
 
 
 ####################
