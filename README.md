@@ -9,5 +9,5 @@ because everyone needs 'em
 - [ ] Run bootstrap script
 
   ```bash
-    curl -fs https://pil.eus | bash
+    curl -fsL pil.eus | bash
   ```
