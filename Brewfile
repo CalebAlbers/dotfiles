@@ -11,6 +11,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "mveritym/mel"
 tap "buo/cask-upgrade"
+tap "homebrew/cask-drivers"
 
 
 ####################
@@ -77,6 +78,7 @@ cask "typora"
 cask "powershell"
 cask "visual-studio-code"
 cask "zoom"
+cask "saleae-logic"
 
 
 ####################
