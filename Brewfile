@@ -79,6 +79,7 @@ cask "powershell"
 cask "visual-studio-code"
 cask "zoom"
 cask "saleae-logic"
+cask "SuperSlicer"
 
 
 ####################
