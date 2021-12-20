@@ -72,14 +72,14 @@ cask "google-drive"
 cask "krisp"
 cask "parallels"
 cask "postman"
+cask "saleae-logic"
 cask "slack"
 cask "spotify"
+cask "SuperSlicer"
 cask "typora"
 cask "powershell"
 cask "visual-studio-code"
 cask "zoom"
-cask "saleae-logic"
-cask "SuperSlicer"
 
 
 ####################
