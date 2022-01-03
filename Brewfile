@@ -13,6 +13,8 @@ tap "mveritym/mel"
 tap "buo/cask-upgrade"
 tap "salesforce/policy_sentry"
 tap "aws/tap"
+tap "homebrew/cask-drivers"
+
 
 ####################
 ## Formulae        #
@@ -76,8 +78,10 @@ cask "krisp"
 cask "parallels"
 cask "postman"
 cask "session-manager-plugin"
+cask "saleae-logic"
 cask "slack"
 cask "spotify"
+cask "SuperSlicer"
 cask "typora"
 cask "powershell"
 cask "virtualbox"
