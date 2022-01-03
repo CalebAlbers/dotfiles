@@ -7,14 +7,15 @@ if [ -f "$HOME/.aliases" ]; then
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/calebalbers/.oh-my-zsh"
-export EDITOR="code -w"      
+export ZSH="/Users/CalebAlbers/.oh-my-zsh"
+export EDITOR="code -w"
+export VISUAL=${EDITOR}      
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="oh-my-zsh"
+ZSH_THEME=oh-my-zsh
 
 autoload -U promptinit; promptinit
 prompt pure
@@ -81,7 +82,8 @@ prompt pure
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
 source ~/.iterm2_shell_integration.zsh
 
 # User configuration
@@ -112,18 +114,16 @@ source ~/.iterm2_shell_integration.zsh
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/calebalbers/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/calebalbers/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/calebalbers/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/calebalbers/google-cloud-sdk/completion.zsh.inc'; fi
-
-# pliancy-cli autocomplete setup
-PLIANCY_CLI_AC_ZSH_SETUP_PATH=/Users/calebalbers/Library/Caches/pliancy-cli/autocomplete/zsh_setup && test -f $PLIANCY_CLI_AC_ZSH_SETUP_PATH && source $PLIANCY_CLI_AC_ZSH_SETUP_PATH;
+if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
 
 # highlight da syntax
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-function gam() { "/Users/USERNAME/bin/gam/gam" "$@" ; }
 
+# policy sentry syntax highlighting
+eval "$(_POLICY_SENTRY_COMPLETE=source_zsh policy_sentry)"
 
 # >>>> Vagrant command completion (start)
 fpath=(/opt/vagrant/embedded/gems/2.2.13/gems/vagrant-2.2.13/contrib/zsh $fpath)

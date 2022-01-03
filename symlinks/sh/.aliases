@@ -1,0 +1,12 @@
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
+
+# doormat
+alias dmv='doormat --smoke-test || doormat --refresh'
+dms() { doormat aws cred-server "$1" }
+
+# policy_sentry
+psq() { policy_sentry query action-table -s "$1" | grep -v " actions:"; }

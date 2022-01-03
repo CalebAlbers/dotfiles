@@ -11,12 +11,15 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "mveritym/mel"
 tap "buo/cask-upgrade"
-
+tap "salesforce/policy_sentry"
+tap "aws/tap"
 
 ####################
 ## Formulae        #
 ####################
 brew "act"
+brew "awscli"
+brew "ec2-metadata-mock"
 brew "gh"
 brew "git"
 brew "git-lfs"
@@ -25,37 +28,38 @@ brew "jq"
 brew "kustomize"
 brew "make"
 brew "mas"
+brew "mveritym/mel/kubedecode"
 brew "node", link: false
+brew "policy_sentry"
+brew "pure"
+brew "shellcheck"
+brew "sshuttle"
 # brew "telnet"
 brew "transcrypt"
 brew "tree"
+brew "volta"
 brew "yadm"
 brew "yarn"
 brew "yq"
-brew "zsh-syntax-highlighting"
 brew "zero-sh/tap/zero"
-brew "mveritym/mel/kubedecode"
-brew "volta"
-brew "awscli"
-brew "pure"
-brew "shellcheck"
+brew "zsh-syntax-highlighting"
 
 
 ####################
 ## HashiCorp       #
 ####################
-# brew hashicorp/tap/boundary
-# brew hashicorp/tap/consul
+brew "hashicorp/tap/boundary"
+brew "hashicorp/tap/consul"
 # brew hashicorp/tap/consul-template
 # brew hashicorp/tap/consul-terraform-sync
 brew "hashicorp/tap/nomad"
 brew "hashicorp/tap/packer"
 brew "hashicorp/tap/sentinel"
 brew "hashicorp/tap/terraform"
+# brew "vagrant"
 brew "hashicorp/tap/vault"
 brew "hashicorp/tap/waypoint"
 cask "hashicorp/tap/hashicorp-boundary-desktop"
-cask "vagrant"
 
 
 ####################
@@ -71,12 +75,14 @@ cask "google-drive"
 cask "krisp"
 cask "parallels"
 cask "postman"
+cask "session-manager-plugin"
 cask "slack"
 cask "spotify"
 cask "typora"
 cask "powershell"
+cask "virtualbox"
 cask "visual-studio-code"
-cask "zoom"
+# cask "zoom"
 
 
 ####################
