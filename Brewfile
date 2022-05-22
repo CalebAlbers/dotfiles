@@ -21,6 +21,7 @@ tap "homebrew/cask-drivers"
 ####################
 brew "act"
 brew "awscli"
+brew "bat"
 brew "ec2-metadata-mock"
 brew "gh"
 brew "git"

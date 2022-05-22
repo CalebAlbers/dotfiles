@@ -4,6 +4,9 @@ alias ll='ls -lh'
 alias ls='ls -G'
 alias lsa='ls -lah'
 
+# bat is pretty neat
+alias cat='bat --paging=never'
+
 # doormat
 alias dmv='doormat --smoke-test || doormat --refresh'
 dms() { doormat aws cred-server "$1" }
