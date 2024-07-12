@@ -10,7 +10,6 @@ tap "mveritym/mel"
 tap "buo/cask-upgrade"
 tap salesforce/policy_sentry https://github.com/salesforce/policy_sentry
 tap "aws/tap"
-tap "homebrew/cask-drivers"
 
 ####################
 ## Shell           #
