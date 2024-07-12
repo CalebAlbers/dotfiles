@@ -18,10 +18,13 @@ brew install zero-sh/tap/zero
 # Clone Repo
 git clone --recursive https://github.com/calebalbers/dotfiles.git ~/.dotfiles
 
-# Initialize Setup
+# Initialize 
+zero setup work # zero setup home
 zero apply-symlinks
 zero apply-defaults
 zero bundle
 zero run-scripts
 
-# TODO: configure homebrew to auto-update
+# Configure homebrew to auto-update
+brew autoupdate status # will report unconfigured at first and will download deps
+brew autoupdate start

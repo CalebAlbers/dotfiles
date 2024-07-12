@@ -1,0 +1,15 @@
+####################
+## HashiCorp       #
+####################
+# brew "hashicorp/tap/boundary"
+brew "hashicorp/tap/consul"
+# brew hashicorp/tap/consul-template
+# brew hashicorp/tap/consul-terraform-sync
+brew "hashicorp/tap/nomad"
+brew "hashicorp/tap/packer"
+brew "hashicorp/tap/sentinel"
+brew "hashicorp/tap/terraform"
+# brew "vagrant"
+brew "hashicorp/tap/vault"
+brew "hashicorp/tap/waypoint"
+cask "hashicorp/tap/hashicorp-boundary-desktop"
