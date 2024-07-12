@@ -50,6 +50,8 @@ cask "docker"
 cask "visual-studio-code"
 cask "github"
 cask "postman"
+brew "gnupg"
+brew "policy_sentry"
 
 ####################
 ## JS/TS           #
@@ -109,11 +111,9 @@ mas "Xcode", id: 497799835
 #
 ## Slated for archival
 # brew "make" # managed via Roam, maybe?
-# brew "gnupg"
 # brew "ec2-metadata-mock"
 # brew "kustomize"
 # brew "mveritym/mel/kubedecode"
-# brew "policy_sentry"
 # brew "pure"
 # brew "telnet"
 # brew "transcrypt"
