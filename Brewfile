@@ -15,15 +15,6 @@ tap "salesforce/policy_sentry"
 tap "aws/tap"
 tap "homebrew/cask-drivers"
 
-
-#################################
-## Bootstrapping                #
-## Needed for this repo to work #
-#################################
-brew "mas" # mac app store
-brew "zero-sh/tap/zero"
-brew "yadm" # yet another dotfile manager
-
 ####################
 ## Shell           #
 ####################
