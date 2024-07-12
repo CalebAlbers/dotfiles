@@ -19,7 +19,16 @@ NSGlobalDomain:
   # Disable automatic period substitution as it’s annoying when typing code
   NSAutomaticPeriodSubstitutionEnabled: false
 
+  # Trackpad (built-in): map bottom right corner to right-click
+  com.apple.trackpad.trackpadCornerClickBehavior: 1
+  com.apple.trackpad.enableSecondaryClick: true
+
 com.apple.print.PrintingPrefs:
   # Automatically quit printer app once the print jobs complete
   Quit When Finished: true
 
+
+# Trackpad (bluetooth): map bottom right corner to right-click
+com.apple.driver.AppleBluetoothMultitouch.trackpad:
+  TrackpadCornerSecondaryClick: 2
+  TrackpadRightClick: true
