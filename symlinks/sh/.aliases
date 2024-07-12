@@ -9,7 +9,6 @@ alias cat='bat --paging=never'
 alias catall='bat --paging=never --show-all'
 
 # doormat
-alias dmv='doormat --smoke-test || doormat --refresh'
 dms() { doormat aws cred-server "$1" }
 
 # policy_sentry
